@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Site</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="wrap">
+      <h1>Your name</h1>
+      <p>Your one line description.</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="wrap">
+      <section id="about">
+        <h2>About</h2>
+        <p>Write a short intro.</p>
+      </section>
+
+      <section id="work">
+        <h2>Work</h2>
+        <ul>
+          <li>Project 1</li>
+          <li>Project 2</li>
+          <li>Project 3</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email. Links. Anything.</p>
+      </section>
+    </main>
+
+    <footer class="wrap">
+      <small>© <span id="y"></span> Your name</small>
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
